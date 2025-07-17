@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/static/head.png" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+        <title>MISO</title>
+    </head>
+    <body>
+        <div id="slots"></div>
+        <div id="slotsGuide">
+            <p>Channel: <code class="highlight" id="channel"></code></p>
+            <p>Version: <code class="highlight" id="version"></code></p>
+            <br />
+            <p>
+                Type
+                <code class="highlight">!spin</code>
+                to (re)spin.
+            </p>
+            <p>
+                Type
+                <code class="highlight">!start</code>
+                to lock in the item.
+            </p>
+            <p>
+                Type
+                <code class="highlight">!finish</code>
+                after you've obtained the item.
+            </p>
+        </div>
+        <div id="runInfo">
+            <div><span id="block" class="highlight">coal</span></div>
+            <div id="timer" class="highlight"></div>
+        </div>
+        <div id="result">
+            <p>
+                Finishing time:
+                <span id="finishingTime" class="highlight"></span>
+            </p>
+        </div>
+
+        <div id="error"></div>
+
+        <div class="slot-container" id="slotContainer">
+            <div class="card-strip" id="cardStrip"></div>
+        </div>
+
+        <script src="/data.js"></script>
+        <script src="/main.js"></script>
+        <script>
+            const app = new Application();
+        </script>
+    </body>
+</html>
