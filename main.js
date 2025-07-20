@@ -54,6 +54,17 @@ const initTwitchListener = (channel, dispatchElem) => {
     chat.connect();
   };
 
+  const getBadges = (str) => {
+    const badgeMatch = str.match(/badges=([^;]*)/);
+
+    if (badgeMatch && badgeMatch[1])
+      return badgeMatch[1]
+        .split(",")
+        .filter((b) => b.includes("/"))
+        .map((b) => b.split("/")[0]);
+    else return [];
+  };
+
   chat.onmessage = function (event) {
     const usedMessage = event.data.split(/\r\n/)[0];
     const textStart = usedMessage.indexOf(` `); // tag part ends at the first space
@@ -69,8 +80,10 @@ const initTwitchListener = (channel, dispatchElem) => {
       ? parsedMessage.split("ACTION ").pop().split("")[0]
       : parsedMessage; // checks for the /me ACTION usage and gets the specific message
 
-    // ignore messages that arent from the broadcaster
-    if (!event.data.includes("badges=broadcaster")) return;
+    // ignore messages that arent from the broadcaster or from one of the mods
+    const badges = getBadges(event.data);
+    if (!(badges.includes("moderator") || badges.includes("broadcaster")))
+      return;
 
     if (message.startsWith("!spin"))
       dispatchElem.dispatchEvent(new CustomEvent("spin"));

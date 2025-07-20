@@ -14,6 +14,7 @@ MISO let's you speedrun obtaining a random item in Minecraft. It is designed suc
 4) To actually start the run with the selected block, do !start.
 5) After you have obtained the item, do !finish.
 
+The messages can be sent by you as the broadcaster, or by one of the moderators of your chat.
 
 ## Additional config
 
