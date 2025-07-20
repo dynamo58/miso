@@ -2,7 +2,7 @@
 
 MISO = minecraft item speedrun overlay
 
-MISO let's you speedrun obtaining a random item in Minecraft. It is designed such that you add it as a browser source in OBS and control it via Twitch chat.
+MISO let's you speedrun obtaining a random item in Minecraft. It is designed such that you add it as a browser source in OBS and control it via Twitch chat. Currently the only supported MC version is `1.21.6`.
 
 ![xd](./static/shot.png)
 
@@ -14,6 +14,15 @@ MISO let's you speedrun obtaining a random item in Minecraft. It is designed suc
 4) To actually start the run with the selected block, do !start.
 5) After you have obtained the item, do !finish.
 
+
+## Additional config
+
+The default position for the timer is top left. You can configure the placement by slapping `&position=` to the url followed by the placement. The available values are:
+
+- `TOP_LEFT` (default),
+- `TOP_RIGHT`,
+- `BOTTOM_LEFT`,
+- `BOTTOM_RIGHT`.
 
 
 # Acknowledgements

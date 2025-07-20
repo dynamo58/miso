@@ -45,8 +45,28 @@ p {
 #runInfo {
     display: none;
     position: absolute;
+}
+
+.top-left {
     top: 0.5em;
     left: 0.5em;
+}
+
+.top-right {
+    top: 0.5em;
+    right: 0.5em;
+    text-align: right;
+}
+
+.bottom-left {
+    bottom: 0.5em;
+    left: 0.5em;
+}
+
+.bottom-right {
+    bottom: 0.5em;
+    right: 0.5em;
+    text-align: right;
 }
 
 #error {

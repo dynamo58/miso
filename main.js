@@ -85,6 +85,7 @@ class Application {
   constructor() {
     const params = new URLSearchParams(window.location.search);
 
+    this.position = params.get("position");
     this.channel = params.get("channel");
     this.version = params.get("version");
     this.item = null;
@@ -130,6 +131,20 @@ class Application {
     this.ui.body.addEventListener("spin", () => this.spin());
     this.ui.body.addEventListener("start", () => this.start());
     this.ui.body.addEventListener("finish", () => this.end());
+
+    switch (this.position) {
+      case "TOP_RIGHT":
+        this.ui.runInfo.classList.add("top-right");
+        break;
+      case "BOTTOM_LEFT":
+        this.ui.runInfo.classList.add("bottom-left");
+        break;
+      case "BOTTOM_RIGHT":
+        this.ui.runInfo.classList.add("bottom-right");
+        break;
+      default:
+        this.ui.runInfo.classList.add("top-left");
+    }
   }
 
   spin() {
