@@ -94,6 +94,13 @@ const initTwitchListener = (channel, dispatchElem) => {
   };
 };
 
+const state = {
+  waitingForSpin: 1,
+  spun: 2,
+  ongoingRun: 3,
+  runFinished: 4,
+};
+
 class Application {
   constructor() {
     const params = new URLSearchParams(window.location.search);
@@ -158,9 +165,19 @@ class Application {
       default:
         this.ui.runInfo.classList.add("top-left");
     }
+
+    this.state = state.waitingForSpin;
   }
 
   spin() {
+    if (
+      !(
+        this.state === state.waitingForSpin ||
+        this.state === state.runFinished ||
+        this.state === state.spun
+      )
+    )
+      return;
     console.log("===== SPIN =====");
 
     const audio = new Audio("/static/slot.mp3");
@@ -226,6 +243,7 @@ class Application {
 
       this.item =
         this.items[this.ui.cardStrip.children[chosenIndex].dataset.id];
+      this.state = state.spun;
     };
 
     audio.play();
@@ -234,6 +252,8 @@ class Application {
   }
 
   start() {
+    if (this.state !== state.spun) return;
+
     console.log("===== START =====");
 
     this.ui.slotContainer.style.display = "none";
@@ -248,9 +268,11 @@ class Application {
     this._timerUpdaterHandle = setInterval(() => {
       this.ui.timer.innerText = elapsed(this.timeStarted, new Date());
     }, 1000);
+    this.state = state.ongoingRun;
   }
 
   end() {
+    if (this.state !== state.ongoingRun) return;
     console.log("===== END =====");
 
     this.ui.finishingTime.innerText = elapsed(this.timeStarted, new Date());
@@ -261,5 +283,7 @@ class Application {
     const audio = new Audio("/static/yay.mp3");
     audio.volume = 0.05;
     audio.play();
+
+    this.state = state.runFinished;
   }
 }
