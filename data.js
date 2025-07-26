@@ -2162,12 +2162,6 @@ const items1_21_6 = [
     stackSize: 64,
   },
   {
-    id: 373,
-    name: "reinforced_deepslate",
-    displayName: "Reinforced Deepslate",
-    stackSize: 64,
-  },
-  {
     id: 374,
     name: "brown_mushroom_block",
     displayName: "Brown Mushroom Block",
