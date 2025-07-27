@@ -1705,12 +1705,6 @@ const items1_21_6 = [
     stackSize: 64,
   },
   {
-    id: 287,
-    name: "petrified_oak_slab",
-    displayName: "Petrified Oak Slab",
-    stackSize: 64,
-  },
-  {
     id: 288,
     name: "cobblestone_slab",
     displayName: "Cobblestone Slab",
@@ -2744,12 +2738,6 @@ const items1_21_6 = [
     stackSize: 64,
   },
   {
-    id: 473,
-    name: "barrier",
-    displayName: "Barrier",
-    stackSize: 64,
-  },
-  {
     id: 474,
     name: "light",
     displayName: "Light",
@@ -3170,18 +3158,6 @@ const items1_21_6 = [
     stackSize: 64,
   },
   {
-    id: 544,
-    name: "repeating_command_block",
-    displayName: "Repeating Command Block",
-    stackSize: 64,
-  },
-  {
-    id: 545,
-    name: "chain_command_block",
-    displayName: "Chain Command Block",
-    stackSize: 64,
-  },
-  {
     id: 546,
     name: "magma_block",
     displayName: "Magma Block",
@@ -3209,12 +3185,6 @@ const items1_21_6 = [
     id: 550,
     name: "bone_block",
     displayName: "Bone Block",
-    stackSize: 64,
-  },
-  {
-    id: 551,
-    name: "structure_void",
-    displayName: "Structure Void",
     stackSize: 64,
   },
   {
@@ -4995,18 +4965,6 @@ const items1_21_6 = [
     stackSize: 1,
   },
   {
-    id: 847,
-    name: "structure_block",
-    displayName: "Structure Block",
-    stackSize: 64,
-  },
-  {
-    id: 848,
-    name: "jigsaw",
-    displayName: "Jigsaw Block",
-    stackSize: 64,
-  },
-  {
     id: 849,
     name: "test_block",
     displayName: "Test Block",
@@ -6294,108 +6252,6 @@ const items1_21_6 = [
     stackSize: 64,
   },
   {
-    id: 991,
-    name: "bundle",
-    displayName: "Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 992,
-    name: "white_bundle",
-    displayName: "White Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 993,
-    name: "orange_bundle",
-    displayName: "Orange Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 994,
-    name: "magenta_bundle",
-    displayName: "Magenta Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 995,
-    name: "light_blue_bundle",
-    displayName: "Light Blue Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 996,
-    name: "yellow_bundle",
-    displayName: "Yellow Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 997,
-    name: "lime_bundle",
-    displayName: "Lime Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 998,
-    name: "pink_bundle",
-    displayName: "Pink Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 999,
-    name: "gray_bundle",
-    displayName: "Gray Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 1000,
-    name: "light_gray_bundle",
-    displayName: "Light Gray Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 1001,
-    name: "cyan_bundle",
-    displayName: "Cyan Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 1002,
-    name: "purple_bundle",
-    displayName: "Purple Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 1003,
-    name: "blue_bundle",
-    displayName: "Blue Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 1004,
-    name: "brown_bundle",
-    displayName: "Brown Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 1005,
-    name: "green_bundle",
-    displayName: "Green Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 1006,
-    name: "red_bundle",
-    displayName: "Red Bundle",
-    stackSize: 1,
-  },
-  {
-    id: 1007,
-    name: "black_bundle",
-    displayName: "Black Bundle",
-    stackSize: 1,
-  },
-  {
     id: 1008,
     name: "fishing_rod",
     displayName: "Fishing Rod",
@@ -6808,12 +6664,6 @@ const items1_21_6 = [
     stackSize: 64,
   },
   {
-    id: 1076,
-    name: "potion",
-    displayName: "Potion",
-    stackSize: 1,
-  },
-  {
     id: 1077,
     name: "spider_eye",
     displayName: "Spider Eye",
@@ -6981,13 +6831,6 @@ const items1_21_6 = [
     enchantCategories: ["equippable", "vanishing"],
   },
   {
-    id: 1185,
-    name: "player_head",
-    displayName: "Player Head",
-    stackSize: 64,
-    enchantCategories: ["equippable", "vanishing"],
-  },
-  {
     id: 1186,
     name: "zombie_head",
     displayName: "Zombie Head",
@@ -7140,12 +6983,6 @@ const items1_21_6 = [
     name: "name_tag",
     displayName: "Name Tag",
     stackSize: 64,
-  },
-  {
-    id: 1211,
-    name: "command_block_minecart",
-    displayName: "Minecart with Command Block",
-    stackSize: 1,
   },
   {
     id: 1212,
@@ -7374,18 +7211,6 @@ const items1_21_6 = [
     stackSize: 64,
   },
   {
-    id: 1247,
-    name: "knowledge_book",
-    displayName: "Knowledge Book",
-    stackSize: 1,
-  },
-  {
-    id: 1248,
-    name: "debug_stick",
-    displayName: "Debug Stick",
-    stackSize: 1,
-  },
-  {
     id: 1249,
     name: "music_disc_13",
     displayName: "Music Disc",
@@ -7538,12 +7363,6 @@ const items1_21_6 = [
     stackSize: 1,
     enchantCategories: ["durability", "crossbow", "vanishing"],
     maxDurability: 465,
-  },
-  {
-    id: 1274,
-    name: "suspicious_stew",
-    displayName: "Suspicious Stew",
-    stackSize: 1,
   },
   {
     id: 1275,
